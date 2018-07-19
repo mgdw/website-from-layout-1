@@ -25,7 +25,7 @@ body {
  [class*="col-"] {
     float: left;
     min-height: 1px;
-    padding: 0px;
+    padding: 0;
  }
 
  .col-1{width: 8.33%}
@@ -40,19 +40,6 @@ body {
  .col-10{width: 83.33%}
  .col-11{width: 91.66%}
  .col-12{width: 100%}
-
- .col-offset-1{margin-left: 8.33%}
- .col-offset-2{margin-left: 16.66%}
- .col-offset-3{margin-left: 25%}
- .col-offset-4{margin-left: 33.33%}
- .col-offset-5{margin-left: 41.66%}
- .col-offset-6{margin-left: 50%}
- .col-offset-7{margin-left: 58.33%}
- .col-offset-8{margin-left: 66.66%}
- .col-offset-9{margin-left: 75%}
- .col-offset-10{margin-left: 83.33%}
- .col-offset-11{margin-left: 91.66%}
-
 
  /*Nawigacja*/
 
@@ -172,8 +159,9 @@ section .container {
 .works p {
     color: #878787;
     font-size: 1.125em;
-    margin-top: 20px;
+    margin: 5vh;
 }
+
 [class*="photo"] {
     width: 20%;
     min-height: 20vw;
@@ -266,6 +254,7 @@ section .container {
     border-radius: 100%;
     cursor: pointer;
 }
+
 [class*="member"] p {
     font-weight: bold;
     color: #fff;
@@ -281,6 +270,7 @@ section .container {
     color: #313332;
     text-align: center;
     margin-top: 15px;
+    font-size: 1.7em;
 }
 
 /* mobile gallery */
@@ -375,8 +365,9 @@ section .container {
 .mobile-text p {
     font-size: 1.125em;
 }
-.mobile-text .col-8 p {
-    padding: 0 30px 0 70px;
+
+.mobile-text h2, .mobile-text p {
+    padding-left: 5vw;
 }
 
 .mobile-text .col-4 p {
@@ -477,3 +468,176 @@ footer {
     margin: 0;
 }
 
+@media(min-width: 768px) and (max-width: 1199px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+
+    .container {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    header nav li a{
+        padding: 0 1.5vw;
+    }
+
+    .hero div p {
+        font-size: 2em;
+    }
+
+    [class*="member"] {
+        height: 30vw;
+        width: 30vw;
+    }
+
+    [class*="member"] div {
+        height: 30vw;
+        width: 30vw;
+        line-height: 30vw;
+    }
+
+    .team h3 {
+        margin-bottom: 15vh;
+    }
+
+    .mobile-text {
+        margin: 0;
+    }
+
+    .mobile-text h2{
+        margin: 0;
+        padding: 2vw;
+    }
+
+    .mobile-text p{
+        margin: 0;
+        padding-left: 2vw;
+    }
+
+    .mobile-gallery {
+        padding: 25px 25px 0 25px;
+        border-radius: 30px 30px 10px 10px;
+    }
+
+    .numbers p {
+        margin-bottom: 8vh;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+
+    header {
+        height: auto;
+    }
+
+    header nav ul {
+        float: none;
+        text-align: center;
+    }
+    
+    header nav li {
+        display: block;
+        width: 100%;
+    }
+
+    header nav img {
+        padding-left: 5vw;
+    }
+
+    .hero div p {
+        font-size: 1.5em;
+    }
+
+    .benefits p {
+        margin-bottom: 40px;
+    }
+
+    .layer i {
+        font-size: 0.85em;
+        padding: 4px;
+    }
+
+    
+    .layer>i:first-child{
+        margin-right: 10px;
+    }
+    .layer>i:nth-child(2){
+        margin-left: 10px;
+    }
+        
+    .layer {
+        visibility: visible;
+        background-color: rgba(206, 206, 206, 0)
+    }
+
+    [class*="member"] {
+        height: 30vw;
+        width: 30vw;
+    }
+
+    [class*="member"] div {
+        height: 30vw;
+        width: 30vw;
+        line-height: 30vw;
+    }
+
+    .team h3 {
+        margin-bottom: 15vh;
+    }
+
+    .mobile .col-s-12 {
+        padding: 0 15vw;
+    }   
+
+    .mobile-gallery {
+        padding: 25px;
+        border-radius: 30px 30px 10px 10px;
+    }
+
+    .mobile-text {
+        margin: 0;
+    }
+
+    .mobile-text p {
+        margin-bottom: 15vh;
+    }
+
+    .mobile-text h2, .mobile-text p {
+        padding-left: 2vw;
+    }
+
+    .numbers p {
+        margin-bottom: 15vh;
+    }
+
+    footer .col-s-12 {
+        padding: 5vh 10vw;
+    }
+
+    .copyrights {
+        margin-top: 10vh;
+    }
+}
